@@ -1,5 +1,4 @@
-version: "3.4"
-
+version: '3.4'
 services:
   sqlserver:
     container_name: sqlserver
@@ -14,7 +13,8 @@ services:
     expose:
       - 1433
     restart: always
-    volumes:
-      - /webapi/src/Infra/Volumes/data:/var/opt/mssql/data
-      - /webapi/src/Infra/Volumes/log:/var/opt/mssql/log
-      - /webapi/src/Infra/Volumes/secrets:/var/opt/mssql/secrets
+    
+    #volumes:
+      #- /APICatalogo/Infra/Volumes/data:/var/opt/mssql/data
+      #- /APICatalogo/Infra/Volumes/log:/var/opt/mssql/log
+      #- /APICatalogo/Infra/Volumes/secrets:/var/opt/mssql/secrets
